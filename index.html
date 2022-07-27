@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Extra 1</title>
+    <meta charset="utf-8" />
+</head>
+
+<body >
+    <h1> Atividade 1 </h1>
+
+    <h2 align="left"> Deixe um comentário </h2>
+   
+    <tr>
+        <td> <label> Nome: </label> </td> <br>
+      <td> <input type="text" id="nome" name="nome" size="30" maxlength="40" required/> </td> 
+      </tr>
+<br>
+
+      <tr>
+        <td> <label> E-mail: </label> </td> <br>
+        <td> <input type="email" id="mail" name="mail" size="30"  required /> </td>
+    </tr>
+    <br>
+    <tr>
+        <td> <label> Website: </label> </td> <br>
+        <td> <input type="text" id="site" name="site" size="30"  required /> </td>
+    </tr>
+
+    <br>
+    <tr>
+        <td> <label> Comentário: </label> </td> <br>
+        <td> <textarea id="resumo" name="resumo" cols="40" rows="10" maxlength="300000" required></textarea> </td>    </tr>
+<br>
+        <p> Observação: Seu comentário será publicado após passar pelo moderador. </p>
+        <br>
+        <input type="submit" id="enviar" name="enviar" value="Enviar Comentário" />
+
+
+        <hr color="black" size="4" width=""/>
+        <br>
+
+        <h1> Atividade 2 </h1>
+
+        <form action="#" method="post" name="gestao">
+            <table align="center" border="0" cellpadding="5" width="500">
+                <tr bgcolor="#B8860B">
+                    <td colspan="2"><strong> SISTEMA DE GESTÃO ACADÊMICA </strong></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><strong> MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO </strong></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Login </strong></label></td>
+                    <td><input type="text" id="login" name="login" size="30" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Senha </strong></label></td>
+                    <td><input type="password" id="senha" name="senha" size="30" required></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Status </strong></label></td>
+                    <td>
+                        <select name="status" id="status" required>
+                            <option value="" selected="selected"> -- Selecione -- </option>
+                            <option value="ativo"> Ativo </option>
+                            <option value="inativo"> Inativo </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Tipo </strong></label></td>
+                    <td>
+                        <label><input type="radio" id="tipo" name="tipo" value="Tec" required><strong> Técnico </strong></label>
+                        <label><input type="radio" id="tipo" name="tipo" value="Prof" required><strong> Professor </strong></label>
+                        <label><input type="radio" id="tipo" name="tipo" value="Alu" required><strong> Aluno </strong></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Data Criação </strong></label></td>
+                    <td><input type="date" name="data" id="data" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Perfil </strong></label></td>
+                    <td>
+                        <label><input type="radio" id="perfil" name="perfil" value="c" required><strong> Convidado </strong></label>
+                        <label><input type="radio" id="perfil" name="perfil" value="a" required><strong> Administrador </strong></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Observações </strong></label></td>
+                    <td><textarea name="obs" id="obs" cols="48" rows="5"/></textarea></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><label><strong> Módulos </strong></label></td>
+                    <td>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Compras </strong></label>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Biblioteca </strong></label>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Acadêmico </strong></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Documentação </strong></label>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Recursos Humanos </strong></label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button type="submit"><strong> Cadastrar </strong></button>
+                        <button type="reset"><strong> Excluir </strong></button>
+                    </td>
+
+                </tr>
+
+            </table>
+        </form>
+        <hr color="black" size="4" width=""/>
+        <br>
+
+        <h1> Atividade 3 </h1>
+
+        <form action="#" method="post" name="gestao">
+            <table align="center" border="0" cellpadding="5" width="680">
+                <tr>
+                    <td bgcolor="#00BFFF" colspan="3"><strong> Não é associado? Faça seu cadastro </strong></td>
+                    <td bgcolor="#00008B"></td>
+                </tr>
+
+                <tr>
+                    <td><label> Nome </label></td>
+                    <td colspan="3"><input type="text" id="nome" name="nome" size="75" required/></td>
+                </tr>
+                    
+                <tr>
+                    <td><label> Nome Completo </label></td>
+                    <td colspan="3"><input type="text" id="nomec" name="nomec" size="75" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label> CPF </label></td>
+                    <td colspan="3"><input type="text" id="cpf" name="cpf" size="75" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label> E-mail </label></td>
+                    <td colspan="3"><input type="email" id="email" name="email" size="75" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label> WebSite </label></td>
+                    <td colspan="3"><input type="site" id="site" name="site" size="75" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label> Endereço </label></td>
+                    <td colspan="3"><input type="text" id="endereco" name="endereco" size="75" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label> Bairro </label></td>
+                    <td><input type="text" id="bairro" name="bairro" size="29" required/></td>
+                    <td><label> Cidade </label></td>
+                    <td><input type="text" id="cidade" name="cidade" size="29" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label> Cep </label></td>
+                    <td><input type="text" id="cep" name="cep" size="29" required/></td>
+                    <td><label> UF </label></td>
+                    <td>
+                        <select name="uf" id="uf" required>
+                        <option value="" selected="selected"> -- Selecione -- </option>
+                        <option value="AC"> AC </option>
+                        <option value="AL"> AL </option>
+                        <option value="AP"> AP </option>
+                        <option value="AM"> AM </option>
+                        <option value="BA"> BA </option>
+                        <option value="CE"> CE </option>
+                        <option value="DF"> DF </option>
+                        <option value="ES"> ES </option>
+                        <option value="GO"> GO </option>
+                        <option value="MA"> MA </option>
+                        <option value="MT"> MT </option>
+                        <option value="MS"> MS </option>
+                        <option value="MG"> MG </option>
+                        <option value="PA"> PA </option>
+                        <option value="PB"> PB </option>
+                        <option value="PR"> PR </option>
+                        <option value="PE"> PE </option>
+                        <option value="PI"> PI </option>
+                        <option value="RJ"> RJ </option>
+                        <option value="RN"> RN </option>
+                        <option value="RS"> RS </option>
+                        <option value="RO"> RO </option>
+                        <option value="RR"> RR </option>
+                        <option value="SC"> SC </option>
+                        <option value="SP"> SP </option>
+                        <option value="SE"> SE </option>
+                        <option value="TO"> TO </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label> Telefone </label></td>
+                    <td><input type="tel" id="telefone" name="telefone" size="29" required/></td>
+                    <td><label> Fax </label></td>
+                    <td><input type="tel" id="fax" name="fax" size="29" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label> Data de Nascimento </label></td>
+                    <td><input type="date" id="data" name="data" required/></td>
+                    <td><label> Sexo </label></td>
+                    <td>
+                        <label><input type="radio" name="sexo" id="sexo" value="M" required/>
+                        M </label>
+                       <label><input type="radio" name="sexo" id="sexo" value="F" required/>
+                        F </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label> Celular </label></td>
+                    <td><input type="tel" id="celular" name="celular" size="29" required/></td>
+                    <td><label> Est.Civil </label></td>
+                    <td>
+                        <select name="uf" id="uf" required>
+                        <option value="" selected="selected"> -- Selecione -- </option>
+                        <option value="Solteiro"> Solteiro </option>
+                        <option value="Casado"> Casado </option>
+                        <option value="Viúvo"> Viúvo </option>
+                        <option value="Divorciado"> Divorciado </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label> Login </label></td>
+                    <td><input type="text" id="login" name="login" size="29" required/></td>
+                    <td><label> Senha </label></td>
+                    <td><input type="password" id="senha" name="senha" size="29" required/></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><label> Desja receber informações sobre os seguintes assuntos abaixo:</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><label><input type="checkbox" id="assunto"> Tecnologia </label>
+                        <label><input type="checkbox" id="assunto"> Esportes </label>
+                        <label><input type="checkbox" id="assunto"> Automóveis </label>
+                        <label><input type="checkbox" id="assunto"> Culinária </label>
+                        <label><input type="checkbox" id="assunto"> Política </label>
+                        <label><input type="checkbox" id="assunto"> Policial </label>
+                        <label><input type="checkbox" id="assunto"> Tempo </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><label><input type="checkbox" id="assunto"> Cultura </label>
+                        <label><input type="checkbox" id="assunto"> Economia </label>
+                        <label><input type="checkbox" id="assunto"> Jogos </label>
+                        <label><input type="checkbox" id="assunto"> Educação </label>
+                        <label><input type="checkbox" id="assunto"> Viagem </label>
+                        <label><input type="checkbox" id="assunto"> Empregos </label>
+                        <label><input type="checkbox" id="assunto"> Moda e Estilo </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><label><input type="checkbox" id="termos" required> Li as regras de casdastro e autorizo a criação do usuário </label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><label><button type="submit" name="send" id="send"> Confirmar </button> <button type="reset" name="clean" id="clean"> Retornar </button></label></td>
+                </tr>
+            </table>
+        </form>
+        
+</body>
+
+</html>
